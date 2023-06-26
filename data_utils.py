@@ -153,7 +153,7 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
     """
         1) loads audio, speaker_id, text pairs
         2) normalizes text and converts them to sequences of integers
-        3) computes spectrograms from audio files.
+        3) computes spectrogra ms from audio files.
     """
     def __init__(self, audiopaths_sid_text, hparams):
         self.audiopaths_sid_text = load_filepaths_and_text(audiopaths_sid_text)
